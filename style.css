@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/background.png) center/cover;
+    padding: 0 8%;
+    position: relative;
+}
+.logo {
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+    margin-left: -80px;
+}
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+.content p {
+    font-size: 18px;
+}
+
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.counter div{
+    flex-basis: 100px;
+    text-align: center;
+    /* display: flex;
+    flex-direction:column; */
+}
+.counter div p {
+    font-size: 60px;
+    margin-bottom: -8px;
+}
+.counter div span{
+    font-size: 18px;
+    color: rgb(235, 180, 152);
+   
+}
+
+.rocket {
+    width: 200px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
